@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Agendify</string>
+
+
+    <!--APARTADO PARA EL MAINACTIVITY-->
+
+    <string name="Btn_iniciar_app">Iniciar Agendify</string>
+
+    <!--ACTIVIDAD REGISTRO-->
+
+    <string name="CrearContactoTxt">Crear nuevo contacto</string>
+    <string name="CorreoEt">Introduce correo</string>
+    <string name="NombreEt">Nombre</string>
+    <string name="TelefonoEt">Telefono</string>
+    <string name="GuardarContactoEt">Guardar Contacto</string>
+    <string name="TengounaCuentaTXT">Tengo una cuenta</string>
+
+    <!--ACTIVIDAD  DE NENU-->
+
+    <string name="BtmCrearNota">Crear Notas</string>
+    <string name="BtnVerNota">Ver Notas</string>
+    <string name="BtnContactos">Crear Contactos</string>
+    <string name="BtnVerContactos">Ver Contactos</string>
+    <string name="BtnSalir">Salir</string>
+
+    <!--ACTIVIDAD DE NOTA-->
+
+
+    <string name="BtnCalwndario">Calendario</string>
+    <string name="TxtAñadirNota">Añadir Nota</string>
+    <string name="BtnGuardarNota">Guardar</string>
+    <string name="BtnBorrarCampos">Borrar Campos</string>
+    <string name="EditTexTitulo">Introduce el titulo</string>
+    <string name="EditTexDescrip">Introduce la descripcion</string>
+
+    <!--ACTIVIDAD VER NOTA-->
+    <string name="TxtVerNota">Nota</string>
+
+
+</resources>

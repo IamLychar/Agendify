@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/nombreEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/TexViNmbEditContacto"
+            android:drawableStart="@drawable/vector_person"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/robotoregular"
+            android:inputType="textEmailAddress"
+            android:padding="20dp"
+            />
+
+        <TextView
+            android:id="@+id/TexViNmbEditContacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/robotoregular"
+            android:text="Nombre:" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/correoEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/vector_correo"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/robotoregular"
+            android:padding="20dp"
+            android:labelFor="@+id/TexViCorreoEditContacto"
+            />
+        <TextView
+            android:id="@+id/TexViCorreoEditContacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/robotoregular"
+            android:text="Correo:" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        >
+
+        <EditText
+            android:id="@+id/telefonoEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/vector_telefono"
+            android:drawablePadding="10dp"
+            android:inputType="phone"
+            android:fontFamily="@font/robotoregular"
+            android:padding="20dp"
+            android:labelFor="@+id/TexViTelefonoEditContacto"
+            />
+
+        <TextView
+            android:id="@+id/TexViTelefonoEditContacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Telefono:"
+            android:fontFamily="@font/robotoregular"
+            android:layout_marginBottom="15dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- EditarNota FloatingActionButton -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="10dp">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButtonVectorEditar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#03A9F4"
+                android:clickable="true"
+                app:srcCompat="@drawable/vector_editar" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- BorrarNota FloatingActionButton -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="10dp">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButtonVectorBorrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#03A9F4"
+                android:clickable="true"
+                app:srcCompat="@drawable/vector_borrar" />
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="10dp">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#03A9F4"
+                android:clickable="true"
+                app:srcCompat="@drawable/vector_menu" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="10dp">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingVolver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#03A9F4"
+                android:clickable="true"
+                app:srcCompat="@drawable/vector_retroceder" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <Button
+        android:id="@+id/guardarRegistoEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/GuardarContactoEt"
+        android:textSize="20dp"
+        android:fontFamily="@font/robotoregular"
+        android:layout_marginTop="15dp"
+        />
+
+
+
+</LinearLayout>

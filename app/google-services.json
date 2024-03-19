@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1016333640492",
+    "project_id": "agendify-app",
+    "storage_bucket": "agendify-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1016333640492:android:9763441ae5dd2bda724289",
+        "android_client_info": {
+          "package_name": "com.example.agendify"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbyS5MK1PX9uykcz7Ac9IjfmN6umivKNA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

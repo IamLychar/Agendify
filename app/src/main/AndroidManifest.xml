@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/iconoincio"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/iconoincio"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Agendify"
+        tools:targetApi="31">
+        <activity
+            android:name=".EditarNota"
+            android:exported="false" />
+        <activity
+            android:name=".VerNota"
+            android:exported="false" />
+        <activity
+            android:name=".EditContacto"
+            android:exported="false" />
+        <activity
+            android:name=".EditarContactoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LeerNota"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Agendify" />
+        <activity
+            android:name=".LeerRegistro"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Agendify" />
+        <activity
+            android:name=".Nota"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Agendify" />
+        <activity
+            android:name=".Menu"
+            android:exported="false"
+            android:theme="@style/Base.Theme.AgendifyNoAction" />
+        <activity
+            android:name=".Registro"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Agendify" /> <!-- Lo que hacemos es añadir  <intent-filter> dentro de nuestro elemento de pantalla de carga -->
+        <activity
+            android:name=".Pantalla_De_carga"
+            android:exported="true"
+            android:theme="@style/Base.Theme.AgendifyNoAction">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <!-- al poner el "LAUNCHER" este hace que inicie primero -->
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Base.Theme.AgendifyNoAction">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

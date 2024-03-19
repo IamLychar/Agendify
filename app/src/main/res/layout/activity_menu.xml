@@ -1,0 +1,229 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="401dp"
+        android:layout_height="222dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="20dp">
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="378dp"
+            android:layout_height="236dp"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:fitsSystemWindows="true"
+            android:keepScreenOn="true" />
+
+
+        <!--PARA EL VIDEO-->
+        <RelativeLayout
+            android:layout_width="344dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/robotoregular"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/temperatureTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/cityEditText"
+                android:layout_width="316dp"
+                android:layout_height="48dp"
+                android:layout_below="@id/temperatureTextView"
+                android:layout_marginTop="16dp"
+                android:hint="Ciudad"
+                android:inputType="text"
+                android:fontFamily="@font/robotoregular"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/countryEditText"
+                android:layout_width="318dp"
+                android:layout_height="48dp"
+                android:layout_below="@id/cityEditText"
+                android:layout_marginTop="8dp"
+                android:hint="País"
+                android:inputType="text"
+                android:fontFamily="@font/robotoregular"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/getWeatherButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/countryEditText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/robotoregular"
+                android:text="Obtener Clima" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!--NOTAS CONTENEDOR PADRE FILA 1 -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/fila1"
+        android:layout_width="389dp"
+        android:layout_height="236dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal">
+
+        <!--CARDVIEW NOTAS-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="20dp">
+
+            <!--ANIAMACIONES NOTA1-->
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="180dp"
+                android:layout_height="165dp"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="animacionnota.json"
+                app:lottie_imageAssetsFolder="assets"
+                app:lottie_loop="true" />
+            <!--ANIAMACIONES NOTA2-->
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="180dp"
+                android:layout_height="166dp"
+                android:layout_marginLeft="150dp"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="animacionvernota.json"
+                app:lottie_imageAssetsFolder="assets"
+                app:lottie_loop="true" />
+
+            <!--CONTENEDOR HIJO BOTONES NOTA -->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/fila2"
+                android:layout_width="312dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="155dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/BtnCrearNota"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/robotoregular"                    android:layout_marginLeft="23dp"
+                    android:text="Crear Notas" />
+
+                <Button
+                    android:id="@+id/BtnLeerNota"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="Notas" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/fila3"
+        android:layout_width="389dp"
+        android:layout_height="236dp"
+        android:layout_below="@id/fila1"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="20dp">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="180dp"
+                android:layout_height="165dp"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="animacionsobre.json"
+                app:lottie_imageAssetsFolder="assets"
+                app:lottie_loop="true" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="180dp"
+                android:layout_height="166dp"
+                android:layout_marginLeft="150dp"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="animaciosobreverde.json"
+                app:lottie_imageAssetsFolder="assets"
+                app:lottie_loop="true" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/fila4"
+                android:layout_width="312dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="155dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/BtnCrearContacto"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="23dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/robotoregular"
+                        android:text="Crear Contactos" />
+
+                    <Button
+                        android:id="@+id/BtnLeerContacto"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|end"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/robotoregular"
+                        android:text="Contactos" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</RelativeLayout>

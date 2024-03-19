@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerNota"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:fontFamily="@font/robotoregular"
+            android:text="@string/TxtVerNota"/>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            />
+
+        <EditText
+            android:id="@+id/EdTvTitulo"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/robotoregular"
+            android:labelFor="@+id/TexViTituloEditNota"/>
+        <TextView
+            android:id="@+id/TexViTituloEditNota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Titulo:"
+            android:fontFamily="@font/robotoregular"
+            />
+
+        <EditText
+            android:id="@+id/EdTvDescripcion"
+            android:layout_marginTop="18dp"
+            android:textSize="20sp"
+            android:minHeight="158dp"
+            android:gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/robotoregular"
+            android:labelFor="@+id/TexViDescripEditNota"/>
+        <TextView
+            android:id="@+id/TexViDescripEditNota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descripción:"
+            android:fontFamily="@font/robotoregular"
+            />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <!-- Scanner FloatingActionButton -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="8dp"
+                app:cardCornerRadius="50dp"
+                app:cardElevation="10dp">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/floatingActionButtonScanner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    app:srcCompat="@drawable/vector_scanner"
+                    android:backgroundTint="#03A9F4"/>
+            </androidx.cardview.widget.CardView>
+
+            <!-- EditarNota FloatingActionButton -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="8dp"
+                app:cardCornerRadius="50dp"
+                app:cardElevation="10dp"
+                >
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/floatingActionButtonEditarNota"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    app:srcCompat="@drawable/vector_editar"
+                    android:backgroundTint="#03A9F4"/>
+            </androidx.cardview.widget.CardView>
+
+            <!-- BorrarNota FloatingActionButton -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="8dp"
+                app:cardCornerRadius="50dp"
+                app:cardElevation="10dp">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/floatingActionButtonBorrarNota"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    app:srcCompat="@drawable/vector_borrar"
+                    android:backgroundTint="#03A9F4"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="50dp"
+                app:cardElevation="10dp">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/floatingHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#03A9F4"
+                    android:clickable="true"
+                    app:srcCompat="@drawable/vector_menu" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="8dp"
+                app:cardCornerRadius="50dp"
+                app:cardElevation="10dp"
+                >
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/floatingVolver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    app:srcCompat="@drawable/vector_retroceder"
+                    android:backgroundTint="#03A9F4"/>
+            </androidx.cardview.widget.CardView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/BtnGuardaNota"
+                android:text="Guardar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/robotoregular"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</LinearLayout>

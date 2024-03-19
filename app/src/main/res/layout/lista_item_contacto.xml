@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Contenedor principal -->
+        <RelativeLayout
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Imagen del contacto -->
+            <ImageView
+                android:id="@+id/ImagenItemContact"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingStart="14dp"
+                android:paddingLeft="14dp"
+                android:paddingEnd="14dp"
+                android:paddingRight="14dp"
+                android:src="@drawable/vector_person" />
+
+            <!-- Detalles del contacto -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@+id/ImagenItemContact"
+                android:layout_toRightOf="@id/ImagenItemContact"
+                android:orientation="vertical">
+
+                <!-- Nombre del contacto -->
+                <TextView
+                    android:id="@+id/TvNombreRecycle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/robotoregular"
+                    android:textStyle="bold" />
+
+                <!-- Teléfono del contacto -->
+                <TextView
+                    android:id="@+id/TvTelefonoRecycle"
+                    android:layout_width="273dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotoregular"
+                    android:textSize="18sp" />
+
+                <!-- Correo del contacto -->
+                <TextView
+                    android:id="@+id/TvCorreoRecycle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#666666"
+                    android:fontFamily="@font/robotoregular"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
